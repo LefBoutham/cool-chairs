@@ -17,7 +17,7 @@ const Products = ({ state }) => {
             <Single key={item.id}>
               <Link link={product.link}>
                 <FeaturedMedia id={fmedia} />
-                {product.title.rendered}
+                <ProductName>{product.title.rendered}</ProductName>
                 <Price>{product.acf.price} €</Price>
                 <div
                   dangerouslySetInnerHTML={{ __html: product.acf.description }}
@@ -43,7 +43,7 @@ const Items = styled.div`
 const Single = styled.div`
   & > a {
     display: block;
-    margin: 6px 0;
+    margin: 15px 0;
     color: #242424;
     font-weight: 500;
     text-decoration: none;
@@ -51,12 +51,17 @@ const Single = styled.div`
 `;
 
 const Heading = styled.div`
-  margin: 0;
+  margin: 0 0 20px 0;
   font-size: 2em;
   font-weight: 600;
 `;
 
+const ProductName = styled.h3`
+  font-size: 1.2em;
+  font-weight: 600;
+`;
+
 const Price = styled.p`
-  font-size: 1.5em;
+  font-size: 1em;
   font-weight: 600;
 `;
