@@ -28,6 +28,14 @@ const ProductStyle = styled.div`
   img {
     max-width: 400px;
   }
+
+  @media only screen and (max-width: 768px) {
+    flex-wrap: wrap;
+
+    img {
+      width: 100%;
+    }
+  }
 `;
 
 const ProductInfo = styled.div`
