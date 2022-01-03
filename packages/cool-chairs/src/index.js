@@ -1,21 +1,16 @@
-const Root = () => {
-  return (
-    <>
-      You can edit your package in:
-      <pre>packages/cool-chairs/src/index.js</pre>
-    </>
-  );
-};
+import Root from "./components";
 
-export default {
+const myFirstTheme = {
   name: "cool-chairs",
   roots: {
-    coolChairs: Root
+    theme: Root,
   },
   state: {
-    coolChairs: {}
+    theme: {},
   },
   actions: {
-    coolChairs: {}
-  }
+    theme: {},
+  },
 };
+
+export default myFirstTheme;

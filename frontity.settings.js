@@ -16,6 +16,15 @@ const settings = {
       state: {
         source: {
           url: "https://wordpress-384045-2359108.cloudwaysapps.com",
+          postTypes: [
+            {
+              type: "products",
+              endpoint: "products",
+              archive: "/products",
+            },
+          ],
+          homepage: "/cool-chairs",
+          postsPage: "/blog",
         },
       },
     },
